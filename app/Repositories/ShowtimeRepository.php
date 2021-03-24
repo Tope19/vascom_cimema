@@ -9,7 +9,7 @@ use App\Models\ShowTime;
 
 class ShowtimeRepository implements ShowtimeInterface{
 
-    protected $movie;
+    protected $show;
 
     public function __construct(ShowTime $show){
         $this->show = $show;
