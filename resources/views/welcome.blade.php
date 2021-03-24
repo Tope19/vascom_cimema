@@ -82,7 +82,7 @@
         @foreach ($shows as $show)
             <div class="col-md-6 col-lg-4 g-mb-30">
             <article class="u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
-                <img class="d-inline-block img-fluid mb-4" src="{{ asset('movie_images/'.$show->movie->image) }}" alt="Image Description">
+                <img class="d-inline-block img-fluid mb-4" src="{{ $admin_source }}/movie_images/{{$show->movie->image}}" alt="Image Description">
                 <h2 class="h5 g-color-black g-font-weight-600 g-mb-10">{{$show->movie->name}}</h4>
                 <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">{!!$show->movie->description!!}</h4>
                 <p>{{ $show->cinema->name }} </p>

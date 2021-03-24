@@ -38,7 +38,7 @@
                                     <td>{{$cin->name}}</td>
                                     <td>{{$cin->address}}</td>
                                     <td>@if (!empty($cin->image))
-                                        <a href="{{ asset('cinema_images/'.$cin->image) }}" target="_blank" class="btn btn-primary btn-xs">View</a>
+                                        <a href="{{ $admin_source }}/cinema_images/{{ $cin->image }}" target="_blank" class="btn btn-primary btn-xs">View</a>
                                         @endif</td>
                                     <td>{{date('D , d M Y',strtotime($cin->created_at)) }}</td>
                                     <td class="center">

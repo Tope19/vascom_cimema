@@ -40,7 +40,7 @@
                                     <td>{{$mov->name}}</td>
                                     <td>{{ $mov->description }}</td>
                                     <td>@if (!empty($mov->image))
-                                        <a href="{{ asset('movie_images/'.$mov->image) }}" target="_blank" class="btn btn-primary btn-xs">View</a>
+                                        <a href="{{ $admin_source }}/movie_images/{{$mov->image}}" target="_blank" class="btn btn-primary btn-xs">View</a>
                                         @endif</td>
                                     <td>{{date('D , d M Y',strtotime($mov->created_at)) }}</td>
                                     <td class="center">
